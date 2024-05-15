@@ -1,5 +1,19 @@
 # Домашнее задание к занятию «Основы Terraform. Yandex Cloud» - `Мурчин Артем`
 
+### Решение - выполненный код на проверку
+
+locals.tf - https://github.com/artmur1/17-02-hw/blob/main/code/locals.tf
+
+main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
+
+outputs.tf - https://github.com/artmur1/17-02-hw/blob/main/code/outputs.tf
+
+providers.tf - https://github.com/artmur1/17-02-hw/blob/main/code/providers.tf
+
+variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+
+vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platform.tf
+
 ### Цели задания
 
 1. Создать свои ресурсы в облаке Yandex Cloud с помощью Terraform.
