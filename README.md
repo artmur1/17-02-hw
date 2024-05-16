@@ -55,7 +55,25 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 ### Решение 1
 
+В переменной variable "vpc_name" имя default = "develop" является неуникальным. Заменил на "network1".
 
+platform_id = "standart-v4" - исправил на "standard-v3".
+
+core_fraction = 5 - недопустимое значение. Поменял на 20 - гарантированная доля CPU.
+
+cores         = 1 - недопустимое значение. Поменял на 2 - количество ядер.
+
+preemptible = true - это значит, что виртуальная машина может быть принудительно остановлена в любой момент. Снижает стоимость виртуальной машины, что помогает сэкономить деньги.
+
+core_fraction=5 - это гарантированная доля vCPU. Но такого значения в яндекс клауд нет - минимальное значение 20. Это значит, что гарантированно мы можем использовать 20 процентов процессорного времени. Снижает стоимость виртуальной машины, что помогает сэкономить деньги.
+
+Выполнение команды  curl ifconfig.me
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-1-1.png)
+
+ЛК Yandex Cloud с созданной ВМ.
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-1-2.png)
 
 ### Задание 2
 
@@ -65,6 +83,10 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 ### Решение 2
 
+Изменеия выполнены. Они отображены в файле variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-2-1.png)
+
 ### Задание 3
 
 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
@@ -72,6 +94,10 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 3. Примените изменения.
 
 ### Решение 3
+
+Изменеия выполнены. 
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-3-1.png)
 
 ### Задание 4
 
@@ -82,6 +108,10 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 ### Решение 4
 
+Изменеия выполнены. Они отображены в файле outputs.tf - https://github.com/artmur1/17-02-hw/blob/main/code/outputs.tf
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-4-1.png)
+
 ### Задание 5
 
 1. В файле locals.tf опишите в **одном** local-блоке имя каждой ВМ, используйте интерполяцию ${..} с НЕСКОЛЬКИМИ переменными по примеру из лекции.
@@ -89,6 +119,16 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 3. Примените изменения.
 
 ### Решение 5
+
+Изменеия выполнены. Они отображены в файлах:
+
+locals.tf - https://github.com/artmur1/17-02-hw/blob/main/code/locals.tf
+
+main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-5-1.png)
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-5-2.png)
 
 ### Задание 6
 
@@ -124,6 +164,19 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 ### Решение 6
 
+Изменеия выполнены. Они отображены в файлах:
+
+variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+
+main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-1.png)
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-2.png)
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-3.png)
+
+![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-4.png)
 
 ------
 
