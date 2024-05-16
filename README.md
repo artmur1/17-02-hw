@@ -83,7 +83,7 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 2
 
-Изменеия выполнены. Они отображены в файле variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+Изменения выполнены. Они отображены в файле variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-2-1.png)
 
@@ -95,7 +95,11 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 3
 
-Изменеия выполнены. 
+Изменения выполнены. Изменения выполнены. Они отображены в файлах:
+
+vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platform.tf
+
+main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-3-1.png)
 
@@ -108,7 +112,7 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 4
 
-Изменеия выполнены. Они отображены в файле outputs.tf - https://github.com/artmur1/17-02-hw/blob/main/code/outputs.tf
+Изменения выполнены. Они отображены в файле outputs.tf - https://github.com/artmur1/17-02-hw/blob/main/code/outputs.tf
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-4-1.png)
 
@@ -120,7 +124,7 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 5
 
-Изменеия выполнены. Они отображены в файлах:
+Изменения выполнены. Они отображены в файлах:
 
 locals.tf - https://github.com/artmur1/17-02-hw/blob/main/code/locals.tf
 
@@ -164,7 +168,7 @@ main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
 ### Решение 6
 
-Изменеия выполнены. Они отображены в файлах:
+Изменения выполнены. Они отображены в файлах:
 
 variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
 
