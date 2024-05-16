@@ -83,7 +83,11 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 2
 
-Изменения выполнены. Они отображены в файле variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+Изменения выполнены. Они отображены в файлах:
+
+variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+
+main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-2-1.png)
 
@@ -95,7 +99,7 @@ core_fraction=5 - это гарантированная доля vCPU. Но та
 
 ### Решение 3
 
-Изменения выполнены. Изменения выполнены. Они отображены в файлах:
+Изменения выполнены. Они отображены в файлах:
 
 vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platform.tf
 
@@ -171,6 +175,8 @@ main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 Изменения выполнены. Они отображены в файлах:
 
 variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
+
+vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platform.tf
 
 main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
