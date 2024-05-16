@@ -89,6 +89,8 @@ variables.tf - https://github.com/artmur1/17-02-hw/blob/main/code/variables.tf
 
 main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
+Результат выполнения команды terraform plan
+
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-2-1.png)
 
 ### Задание 3
@@ -105,6 +107,8 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
+На скриншоте видно 2 вновь созданные ВМ. Машина "netology-develop-platform-db" находится в зоне "ru-central1-b" с RAM=2Гб.
+
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-3-1.png)
 
 ### Задание 4
@@ -117,6 +121,8 @@ main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 ### Решение 4
 
 Изменения выполнены. Они отображены в файле outputs.tf - https://github.com/artmur1/17-02-hw/blob/main/code/outputs.tf
+
+Результат выполнения команды ```terraform output```. Имя ВМ, внешний IP адрес, а также «полностью определённое доменное имя» отображаются корректно.
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-4-1.png)
 
@@ -134,7 +140,11 @@ locals.tf - https://github.com/artmur1/17-02-hw/blob/main/code/locals.tf
 
 main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
+Описал в файле locals.tf имя каждой ВМ, используйте интерполяцию ${..}.
+
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-5-1.png)
+
+Заменил значения для name в main.tf для каждой ВМ. Старый variable name закоментировал.
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-5-2.png)
 
@@ -180,9 +190,15 @@ vms_platform.tf - https://github.com/artmur1/17-02-hw/blob/main/code/vms_platfor
 
 main.tf - https://github.com/artmur1/17-02-hw/blob/main/code/main.tf
 
+В единой map-переменной прописал ресурсы обеих ВМ.
+
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-1.png)
 
+Прописал ссылки на ресусы ВМ в файле main.tf
+
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-2.png)
+
+В единой map-переменной прописал блок metadata. Он общий для обеих ВМ.
 
 ![alt text](https://github.com/artmur1/17-02-hw/blob/main/img/17-2-6-3.png)
 
